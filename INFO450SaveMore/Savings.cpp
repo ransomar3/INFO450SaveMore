@@ -5,14 +5,19 @@
 #include "Savings.h"
 using namespace std;
 
-Savings::Savings(string acctNo, string type, double blnc, int intRate) : Account(acctNo, blnc, intRate)
+Savings::Savings(string acctNo, string type, double blnc, int intRate, int saveFee) : Account(acctNo, type, blnc, intRate)
 {
-	// Varaible here 
+	fee = saveFee;
+}
+
+int Savings::CalculateMonthlyInterest()
+{
+	return 0;
 }
 
 Savings::Savings() : Account()
 {
-	savBalance = 0;
+	balance = 0;
 }
 
 void Savings::Display()

@@ -155,7 +155,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Account.cpp" />
-    <ClCompile Include="BankAccount.cpp" />
     <ClCompile Include="CDAccount.cpp" />
     <ClCompile Include="Checking.cpp" />
     <ClCompile Include="INFO450SaveMore.cpp" />

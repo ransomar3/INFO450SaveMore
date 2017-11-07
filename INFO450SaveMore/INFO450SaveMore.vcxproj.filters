@@ -44,9 +44,6 @@
     <ClCompile Include="INFO450SaveMore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BankAccount.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Account.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

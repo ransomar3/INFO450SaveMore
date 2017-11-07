@@ -9,8 +9,3 @@ Checking::Checking() : Account()
 {
 
 }
-
-Checking::Checking() : Account()
-{
-
-}

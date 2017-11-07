@@ -9,7 +9,8 @@ private:
 
 public:
 	Savings();
-	Savings(string acctNo, string type, double blnc, int intRate);
+	Savings(string acctNo, string type, double blnc, int intRate, int saveFee);
 	int CalculateMonthlyInterest();
+	void Display();
 	void GetBalance();
 };
