@@ -147,7 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Account.h" />
-    <ClInclude Include="BankAccount.h" />
+    <ClInclude Include="CDAccount.h" />
     <ClInclude Include="Checking.h" />
     <ClInclude Include="Savings.h" />
     <ClInclude Include="stdafx.h" />
@@ -156,6 +156,7 @@
   <ItemGroup>
     <ClCompile Include="Account.cpp" />
     <ClCompile Include="BankAccount.cpp" />
+    <ClCompile Include="CDAccount.cpp" />
     <ClCompile Include="Checking.cpp" />
     <ClCompile Include="INFO450SaveMore.cpp" />
     <ClCompile Include="Savings.cpp" />

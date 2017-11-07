@@ -7,12 +7,14 @@ class Account
 {
 protected: 
 	string acctNumber;
+	string acctType;
 	double balance;
 	int interestRate;
 
 public:
 	Account();
-	Account(string acctNo, double blnc, int intRate);
-	virtual void DisplayAccount();
-	virtual void Display(); 
+	Account(string acctNo, string type, double blnc, int intRate);
+	virtual void Withdraw(double amount);
+	virtual void Deposit(double amount);
+	virtual void DisplayAccount(); 
 };

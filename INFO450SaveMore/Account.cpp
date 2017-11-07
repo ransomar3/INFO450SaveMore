@@ -7,13 +7,15 @@ using namespace std;
 Account::Account()
 {
 	acctNumber = "";
+	acctType = "";
 	balance = 0;
 	interestRate = 0;
 }
 
-Account::Account(string acctNo, double blnc, int intRate)
+Account::Account(string acctNo, string type, double blnc, int intRate)
 {
 	acctNumber = acctNo;
+	acctType = type;
 	balance = blnc;
 	interestRate = intRate; 
 }

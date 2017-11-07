@@ -5,9 +5,9 @@
 #include "Savings.h"
 using namespace std;
 
-Savings::Savings(string acctNo, double blnc, int intRate, int savAmt) : Account(acctNo, blnc, intRate)
+Savings::Savings(string acctNo, string type, double blnc, int intRate) : Account(acctNo, blnc, intRate)
 {
-	savBalance = savAmt;
+	// Varaible here 
 }
 
 Savings::Savings() : Account()

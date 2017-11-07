@@ -4,15 +4,12 @@
 class Savings : public Account
 {
 private:
-	double savBalance;
-	double savAmt;
+	double interestRate;
+	int fee;
 
 public:
 	Savings();
-	Savings(string acctNo, double blnc, int intRate);
+	Savings(string acctNo, string type, double blnc, int intRate);
 	int CalculateMonthlyInterest();
-	int Withdraw(double savAmt);
-	int Deposit(double savAmt);
 	void GetBalance();
-	void Display();
 };
