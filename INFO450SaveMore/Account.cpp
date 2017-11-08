@@ -5,6 +5,7 @@
 using namespace std;
 
 // default constructor
+// cpp file for class definitions and functions for default account
 Account::Account()
 {
 	acctNumber = "";

@@ -15,6 +15,15 @@ Checking::Checking(string acctNo, double blnc) : Account(acctNo, blnc)
 	interestRate = 0;
 }
 
+void Checking::OrderChecks(double checks, double amount)
+{
+	checks = (amount - balance) - 15.00;
+
+	cout << "Enter the amount you would like to put on the check: " << endl;
+	cin >> amount;
+	cout << "Your new balance is: " << checks << endl;
+}
+
 void Checking::Withdraw(double amount)
 {
 	balance = (balance - amount) - fee;

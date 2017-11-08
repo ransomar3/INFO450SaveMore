@@ -3,6 +3,7 @@
 #include <string>
 using namespace std;
 
+// Inheritance of Account class & other defined variables/constructors for Savints
 class Savings : public Account
 {
 private:

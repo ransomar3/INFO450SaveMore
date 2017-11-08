@@ -7,17 +7,18 @@ using namespace std;
 
 CDAccount::CDAccount() : Account()
 {
-
+	term = 5;
+	termRate = ((0.10/12) * balance);
 }
 
-void CDAccount::Withdraw()
+void CDAccount::Withdraw(double amount)
 {
-
+	balance = balance - amount;
 }
 
-void CDAccount::Deposit()
+void CDAccount::Deposit(double amount)
 {
-
+	balance = balance + amount;
 }
 
 void CDAccount::Display()

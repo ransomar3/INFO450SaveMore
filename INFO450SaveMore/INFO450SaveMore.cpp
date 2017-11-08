@@ -8,6 +8,7 @@
 #include <iostream>
 using namespace std;
 
+// Functions to create new types of bank accounts
 
 int main()
 {
