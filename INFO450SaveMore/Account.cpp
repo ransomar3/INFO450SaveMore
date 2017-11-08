@@ -4,8 +4,6 @@
 #include <iostream>
 using namespace std;
 
-// default constructor
-// cpp file for class definitions and functions for default account
 Account::Account()
 {
 	acctNumber = "";
@@ -14,10 +12,19 @@ Account::Account()
 	interestRate = 0;
 }
 
-Account::Account(string acctNo, double blnc)
+// default constructor
+// cpp file for class definitions and functions for default account
+Account::Account(string acctNo, string type, double blnc, int rate)
 {
 	acctNumber = acctNo;
+	acctType = type;
 	balance = blnc;
+	interestRate = rate;
+}
+
+void Account::CreateAccount()
+{
+
 }
 
 void Account::Withdraw(double amount)

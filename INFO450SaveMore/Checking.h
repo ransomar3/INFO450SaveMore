@@ -12,6 +12,7 @@ private:
 public:
 	Checking();
 	Checking(string acctNo, double blnc);
+	void CreateAccount();
 	void Withdraw(double amount);
 	void Deposit(double amount);
 	void OrderChecks(double checks, double amount);

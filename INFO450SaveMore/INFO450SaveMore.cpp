@@ -24,10 +24,18 @@ int main()
 	cin >> answer;
 	if (answer == 's' || answer == 'S')
 	{
-		aAcct = new Savings();
-
+		Savings 
+		// function to create new Savings
 	}
-	// new account functions here 
-    return 0;
+	else if (answer == 'c' || answer == 'C')
+	{
+		// function to create new Checking
+	}
+	else if (answer == 'd' || answer == 'D')
+	{
+		// function to create new CD
+	}
+
+	return 0;
 }
 

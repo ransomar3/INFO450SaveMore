@@ -12,8 +12,13 @@ Savings::Savings(string acctNo, double blnc) : Account(acctNo, blnc)
 	balance = blnc;
 }
 
+void Savings::CreateAccount()
+{
+}
+
 void Savings::AssessInterest()
 {
+	// Interest rate calculations if account is at $10000, above or below
 	if (balance <= 10000)
 	{
 		interestRate = ((0.01 / 12) * balance);

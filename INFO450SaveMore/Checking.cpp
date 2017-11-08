@@ -15,6 +15,10 @@ Checking::Checking(string acctNo, double blnc) : Account(acctNo, blnc)
 	interestRate = 0;
 }
 
+void Checking::CreateAccount()
+{
+}
+
 void Checking::OrderChecks(double checks, double amount)
 {
 	checks = (amount - balance) - 15.00;
@@ -27,6 +31,7 @@ void Checking::OrderChecks(double checks, double amount)
 void Checking::Withdraw(double amount)
 {
 	balance = (balance - amount) - fee;
+	// withdraw amount given including the $5 fee added onto transaction
 }
 
 void Checking::Deposit(double amount)

@@ -13,6 +13,7 @@ private:
 
 public:
 	Savings(string acctNo, double blnc);
+	void CreateAccount();
 	void AssessInterest();
 	void Withdraw(double amount);
 	void Deposit(double amount);

@@ -10,6 +10,11 @@ CDAccount::CDAccount() : Account()
 	term = 5;
 	termRateA = ((0.10/12) * balance);
 	termRateB = ((0.05/12) * balance);
+	// Term rates defined here
+}
+
+void CDAccount::CreateAccount()
+{
 }
 
 void CDAccount::Withdraw(double amount)
@@ -19,11 +24,11 @@ void CDAccount::Withdraw(double amount)
 
 void CDAccount::AssessInterest()
 {
-	if (term > 5)
+	if (term >= 5)
 	{
 		
 	}
-	else if (term < 5)
+	else if (term <= 5)
 	{
 
 	}

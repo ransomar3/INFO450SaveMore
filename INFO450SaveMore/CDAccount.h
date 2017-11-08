@@ -15,6 +15,7 @@ private:
 
 public:
 	CDAccount();
+	void CreateAccount();
 	void Withdraw(double amount);
 	void AssessInterest();
 	void Deposit(double amount);
