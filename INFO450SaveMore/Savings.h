@@ -9,11 +9,11 @@ class Savings : public Account
 private:
 	double interestRate;
 	double balance;
-	int fee;
+	double fee;
 
 public:
 	Savings(string acctNo, double blnc);
-	void CalculateMonthlyInterest();
+	void AssessInterest();
 	void Withdraw(double amount);
 	void Deposit(double amount);
 	void Display();

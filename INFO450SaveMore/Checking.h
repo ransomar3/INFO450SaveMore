@@ -8,7 +8,7 @@ class Checking : public Account
 {
 private:
 	double balance;
-	int fee;
+	double fee;
 public:
 	Checking();
 	Checking(string acctNo, double blnc);

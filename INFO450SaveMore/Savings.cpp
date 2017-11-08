@@ -12,18 +12,18 @@ Savings::Savings(string acctNo, double blnc) : Account(acctNo, blnc)
 	balance = blnc;
 }
 
-void Savings::CalculateMonthlyInterest()
+void Savings::AssessInterest()
 {
 	if (balance <= 10000)
 	{
 		interestRate = ((0.01 / 12) * balance);
-		balance = (interestRate + balance) - fee;
+		balance = (interestRate + balance);
 	}
 	
 	else if (balance >= 10000)
 	{
 		interestRate = ((0.02 / 12) * balance);
-		balance = (interestRate + balance) - fee;
+		balance = (interestRate + balance);
 	}
 
 	cout << "Your new balance is: " << balance << " after the transaction" << endl;

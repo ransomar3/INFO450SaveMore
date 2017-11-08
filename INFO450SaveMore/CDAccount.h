@@ -7,14 +7,16 @@ using namespace std;
 class CDAccount : public Account
 {
 private:
-	int term;
-	int termRate; 
-	int fee;
+	double term;
+	double termRateA;
+	double termRateB;
+	double fee;
 	double balance;
 
 public:
 	CDAccount();
 	void Withdraw(double amount);
+	void AssessInterest();
 	void Deposit(double amount);
 	void Display();
 };
