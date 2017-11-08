@@ -6,9 +6,12 @@ using namespace std;
 class Checking : public Account
 {
 private:
-	double chBalance;
+	double balance;
 	int fee;
 public:
 	Checking();
-	Checking(string acctNo, double blnc, int intRate);
+	Checking(string acctNo, double blnc);
+	void Withdraw(double amount);
+	void Deposit(double amount);
+	void Display();
 };

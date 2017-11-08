@@ -13,8 +13,8 @@ protected:
 
 public:
 	Account();
-	Account(string acctNo, string type, double blnc, int intRate);
-	virtual void Withdraw(double amount);
-	virtual void Deposit(double amount);
+	Account(string acctNo, double blnc);
+	virtual void Withdraw(double amount) = 0;
+	virtual void Deposit(double amount) = 0;
 	virtual void DisplayAccount(); 
 };

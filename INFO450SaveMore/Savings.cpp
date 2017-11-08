@@ -3,30 +3,60 @@
 #include <string>
 #include "Account.h"
 #include "Savings.h"
+#include <iostream>
 using namespace std;
 
-Savings::Savings(string acctNo, string type, double blnc, int intRate, int saveFee) : Account(acctNo, type, blnc, intRate)
+Savings::Savings(string acctNo, double blnc) : Account(acctNo, blnc)
 {
-	fee = saveFee;
+	fee = 2.00;
+	balance = blnc;
 }
 
-int Savings::CalculateMonthlyInterest()
+void Savings::CalculateMonthlyInterest()
 {
-	return 0;
+	if (balance <= 10000)
+	{
+		interestRate = ((0.01 / 12) * balance);
+		balance = (interestRate + balance) - fee;
+	}
+	
+	else if (balance >= 10000)
+	{
+		interestRate = ((0.02 / 12) * balance);
+		balance = (interestRate + balance) - fee;
+	}
+
+	cout << "Your new balance is: " << balance << " after the transaction" << endl;
+	return Display();
 }
 
-Savings::Savings() : Account()
+void Savings::Withdraw(double amount)
 {
-	balance = 0;
+	balance = (balance - amount) - fee; 
+
+	cout << "Enter the amount you'd like to withdraw: " << endl;
+	cin >> amount;
+	cout << "Your new balance is: " << balance << endl;
+}
+
+void Savings::Deposit(double amount)
+{
+	balance = balance + amount;
+
+	cout << "Enter the amount you'd like to deposit: " << endl;
+	cin >> amount;
+	cout << "Your new balance is: " << balance << endl;
 }
 
 void Savings::Display()
 {
-	cout << "Savings balance: " << endl;
-	cout << "Savings interest rate: " << endl; 
+		cout << "Enter account number: " << endl;
+		cin >> acctNumber;
+		cout << "==================================================" << endl;
+		cout << "Account Number: " << acctNumber << endl;
+		cout << "Account Type: " << acctType << endl;
+		cout << "Account Balance: " << balance << endl;
+		cout << "Interest Rate applied: " << interestRate << endl;
+		cout << "==================================================" << endl;	
 }
 
-void Savings::GetBalance()
-{
-	cout << "Enter account number: " << endl;
-}

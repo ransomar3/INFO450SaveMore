@@ -8,6 +8,11 @@ class CDAccount : public Account
 private:
 	int term; 
 	int cdFee;
+	double balance;
 public:
-
+	// CDAccount
+	CDAccount();
+	void Withdraw();
+	void Deposit();
+	void Display();
 };
