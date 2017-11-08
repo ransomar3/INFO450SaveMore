@@ -17,6 +17,7 @@ Checking::Checking(string acctNo, double blnc) : Account(acctNo, blnc)
 
 void Checking::CreateAccount()
 {
+
 }
 
 void Checking::OrderChecks(double checks, double amount)
