@@ -16,7 +16,7 @@ using namespace std;
 int main()
 {
 	char answer;
-	Account * aAcct = NULL;
+	Account *aAcct = NULL;
 	cout << "Welcome. What type of account do you want to create?\n" << endl;
 	cout << "S --> Savings\n" << endl;
 	cout << "C --> Checking\n" << endl;
@@ -31,13 +31,16 @@ int main()
 	else if (answer == 'c' || answer == 'C')
 	{
 		Checking CreateAccount();
+
 		// function to create new Checking
 	}
 	else if (answer == 'd' || answer == 'D')
 	{
 		CDAccount CreateAccount();
+
 		// function to create new CD
 	}
+	aAcct->DisplayAccount();
 
 	return 0;
 }

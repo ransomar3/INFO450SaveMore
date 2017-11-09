@@ -15,13 +15,20 @@ Checking::Checking(string acctNo, string type, double blnc, int rate) : Account(
 	interestRate = 0;
 }
 
+void Checking::CreateAccount()
+{
+	cout << "Please enter the amount you would like to deposit in your new account: \n" << endl;
+	cin >> balance;
+	cout << "Your balance is now\n " << balance << endl;
+}
+
 void Checking::OrderChecks(double checks, double amount)
 {
 	checks = (amount - balance) - 15.00;
 
 	cout << "Enter the amount you would like to put on the check: " << endl;
 	cin >> amount;
-	cout << "Your new balance is: " << checks << endl;
+	cout << "Your new balance is: " << checks << " after the transaction" <<  endl;
 }
 
 void Checking::Withdraw(double amount)
@@ -35,7 +42,7 @@ void Checking::Deposit(double amount)
 	balance = (balance + amount);
 }
 
-void Checking::Display()
+void Checking::DisplayAccount()
 {
 	cout << "Enter account number: " << endl;
 	cin >> acctNumber;

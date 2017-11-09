@@ -3,13 +3,21 @@
 #include <string>
 #include "Account.h"
 #include "Savings.h"
-#include <iostream>
 using namespace std;
 
 Savings::Savings(string acctNo, string type, double blnc, int rate) : Account(acctNo, type, blnc, rate)
 {
 	fee = 2.00;
 	balance = blnc;
+	
+}
+
+void Savings::CreateAccount()
+{
+	cout << "Please enter the amount you would like to deposit in your new account: \n" << endl;
+	cin >> balance;
+	cout << "Your balance is now\n " << balance << endl;
+
 }
 
 void Savings::AssessInterest()
@@ -49,7 +57,7 @@ void Savings::Deposit(double amount)
 	cout << "Your new balance is: " << balance << endl;
 }
 
-void Savings::Display()
+void Savings::DisplayAccount()
 {
 		cout << "Enter account number: " << endl;
 		cin >> acctNumber;

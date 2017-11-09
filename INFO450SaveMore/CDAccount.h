@@ -8,6 +8,7 @@ class CDAccount : public Account
 {
 private:
 	int term;
+	double inputTerm;
 	double termRateA;
 	double termRateB;
 	double fee;
@@ -15,9 +16,10 @@ private:
 
 public:
 	CDAccount();
-	CDAccount(string acctNo, string type, double blnc, int rate, int term);
+	CDAccount(string acctNo, string type, double blnc, int rate, int term, double inputTerm);
+	void CreateAccount();
 	void Withdraw(double amount);
-	void AssessInterest();
+	void AssessInterest(double inputTerm);
 	void Deposit(double amount);
-	void Display();
+	void DisplayAccount();
 };
