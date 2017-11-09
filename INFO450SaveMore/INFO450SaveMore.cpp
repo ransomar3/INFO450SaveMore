@@ -24,15 +24,18 @@ int main()
 	cin >> answer;
 	if (answer == 's' || answer == 'S')
 	{
-		Savings 
+		Savings CreateAccount();
+
 		// function to create new Savings
 	}
 	else if (answer == 'c' || answer == 'C')
 	{
+		Checking CreateAccount();
 		// function to create new Checking
 	}
 	else if (answer == 'd' || answer == 'D')
 	{
+		CDAccount CreateAccount();
 		// function to create new CD
 	}
 

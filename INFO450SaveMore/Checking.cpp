@@ -10,14 +10,9 @@ Checking::Checking() : Account()
 	fee = 5.00;
 }
 
-Checking::Checking(string acctNo, double blnc) : Account(acctNo, blnc)
+Checking::Checking(string acctNo, string type, double blnc, int rate) : Account(acctNo, type, blnc, rate)
 {
 	interestRate = 0;
-}
-
-void Checking::CreateAccount()
-{
-
 }
 
 void Checking::OrderChecks(double checks, double amount)

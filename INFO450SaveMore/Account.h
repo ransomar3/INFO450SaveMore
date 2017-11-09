@@ -14,7 +14,6 @@ protected:
 public:
 	Account();
 	Account(string acctNo, string type, double blnc, int rate);
-	virtual void CreateAccount();
 	virtual void Withdraw(double amount);
 	virtual void Deposit(double amount);
 	virtual void DisplayAccount(); 

@@ -7,7 +7,7 @@ using namespace std;
 class CDAccount : public Account
 {
 private:
-	double term;
+	int term;
 	double termRateA;
 	double termRateB;
 	double fee;
@@ -15,7 +15,7 @@ private:
 
 public:
 	CDAccount();
-	void CreateAccount();
+	CDAccount(string acctNo, string type, double blnc, int rate, int term);
 	void Withdraw(double amount);
 	void AssessInterest();
 	void Deposit(double amount);

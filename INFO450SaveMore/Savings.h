@@ -12,8 +12,7 @@ private:
 	double fee;
 
 public:
-	Savings(string acctNo, double blnc);
-	void CreateAccount();
+	Savings(string acctNo, string type, double blnc, int rate);
 	void AssessInterest();
 	void Withdraw(double amount);
 	void Deposit(double amount);

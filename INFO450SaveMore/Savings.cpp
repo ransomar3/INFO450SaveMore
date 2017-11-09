@@ -6,14 +6,10 @@
 #include <iostream>
 using namespace std;
 
-Savings::Savings(string acctNo, double blnc) : Account(acctNo, blnc)
+Savings::Savings(string acctNo, string type, double blnc, int rate) : Account(acctNo, type, blnc, rate)
 {
 	fee = 2.00;
 	balance = blnc;
-}
-
-void Savings::CreateAccount()
-{
 }
 
 void Savings::AssessInterest()

@@ -22,11 +22,6 @@ Account::Account(string acctNo, string type, double blnc, int rate)
 	interestRate = rate;
 }
 
-void Account::CreateAccount()
-{
-
-}
-
 void Account::Withdraw(double amount)
 {
 	balance = (balance - amount);
