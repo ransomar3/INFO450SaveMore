@@ -36,7 +36,7 @@ void Savings::AssessInterest()
 	}
 
 	cout << "Your new balance is: " << balance << " after the transaction" << endl;
-	return Display();
+	return DisplayAccount();
 }
 
 void Savings::Withdraw(double amount)
